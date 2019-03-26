@@ -10,7 +10,7 @@ import { Constants } from '../util/constants.util';
 })
 
 export class UserService {
-    private userSubject = new BehaviorSubject<User>();
+    private userSubject = new BehaviorSubject<User>(null);
     constructor(private http: HttpClient)  {
      }
 
